@@ -61,7 +61,6 @@ class BaseController extends CController {
             exit;
         }
         //设置微信分享参数
-        $this::$shareParam = self::getWxConfig();
         return parent::beforeAction($action);
     }
 
@@ -73,67 +72,5 @@ class BaseController extends CController {
     public function page404() {
         die('page not found');
     }
-    //获取微信分享设置
-    public static function getWxConfig() {
-        $weixinParams     = Yii::app()->params['weixinParams'];
-        $model            = BaseModel::getInstance();
-        $params           = array();
-        $time             = time();
-        $str              = md5(uniqid());
-        $params['config'] = array(
-            'app_id'    => $weixinParams['weixinAuth']['AppID'],
-            'timestamp' => $time,
-            'nonceStr'  => $str,
-            'signature' => '',
-        );
-        $curl = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        $db   = BaseModel::getInstance()->getDb();
-        if ($result = $db->select('values')->from('admin_config')->where(array('and', 'name="share_set"'))->queryRow()) {
-            $params['param']         = json_decode($result['values'], true);
-            $params['param']['link'] = $curl;
-        }
-        $row = $model->getDb()->select('values')->from('admin_config')->where(array('and', 'name="jsapi_ticket"'))->queryRow();
-        $arr = array(
-            'noncestr'  => $str,
-            'timestamp' => $time,
-            'url'       => $curl,
-        );
-        if ($row) {
-            $row = json_decode($row['values'], true);
-            if ($time < $row['expires_in']) {
-                $arr['jsapi_ticket'] = $row['ticket'];
-                ksort($arr, SORT_STRING);
-                $sstr                          = http_build_query($arr);
-                $sstr                          = urldecode($sstr);
-                $params['config']['signature'] = sha1($sstr);
-                return $params;
-            }
-        }
-        $accessToken = $model->getAccessToken();
-        $url         = 'https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=' . $accessToken . '&type=jsapi';
-        $result      = CurlApiModel::getInstance()->crulWeixin($url);
-        if (!isset($result['ticket']) || !isset($result['expires_in'])) {
-            return $params;
-        }
-        $arr['jsapi_ticket'] = $result['ticket'];
-        ksort($arr, SORT_STRING);
-        $sstr                          = http_build_query($arr);
-        $sstr                          = urldecode($sstr);
-        $params['config']['signature'] = sha1($sstr);
-        $param                         = array(
-            'ticket'     => $result['ticket'],
-            'expires_in' => $result['expires_in'] + $time,
-        );
-        if ($row) {
-            $data = array('values' => json_encode($param));
-            $model->update($data, array('and', 'name="jsapi_ticket"'));
-        } else {
-            $data = array(
-                'name'   => 'jsapi_ticket',
-                'values' => json_encode($param),
-            );
-            $model->insert($data);
-        }
-        return $params;
-    }
+    
 }
