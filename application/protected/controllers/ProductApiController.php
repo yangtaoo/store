@@ -9,7 +9,7 @@
  * 入口类.
  */
 class ProductApiController extends BaseController {
-    public function productList(){
+    public function actionProductList(){
         $data = array(
             array(
                 "_id" => 1,
