@@ -1,3 +1,5 @@
 #123ignore文件
 application/protected/modules/admin/assets/*
 framework
+application/protected/config
+application/protected/runtime/*
