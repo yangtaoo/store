@@ -15,7 +15,7 @@ class SiteController extends BaseController {
      *
      * @return void
      */
-    public function actionIndex() {
+    public function actionList() {
         $tagsGoods   = AuctionGoodsModel::getInstance()->getTagsGoods();
         $userConcern = UserConcernModel::getInstance()->getConcernList(1);
         $homeImg     = DefaultModel::getInstance()->getListByCond(array('and', 'status=1'), 'sort asc', 'img_url,alt,img_link', 6);
