@@ -1,1 +1,2 @@
-#ignore文件bbc
+#123ignore文件
+application/protected/modules/admin/assets/*

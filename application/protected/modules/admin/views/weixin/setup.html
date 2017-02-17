@@ -1,0 +1,188 @@
+<body class="bootstrap-admin-with-small-navbar">
+    <!-- small navbar -->
+    <?php include __DIR__ . "/../public/nav.php" ?>
+
+    <div class="container">
+        <!-- left, vertical navbar & content -->
+        <div class="row">
+            <!-- left, vertical navbar -->
+            <?php include __DIR__ . "/../public/left.php" ?>               
+
+            <!-- content -->
+            <div class="main">
+                            <div class="panel panel-default bootstrap-admin-no-table-panel">
+                                <div class="bootstrap-admin-no-table-panel-content bootstrap-admin-panel-content collapse in">
+                                    <div id="rootwizard">
+                                        <div class="navbar">
+                                            <div class="container">
+                                                <ul class="nav nav-pills">
+                                                    <li  class="active"><a href="#tab1" data-toggle="tab">基本设置</a></li>
+                                                    <li><a href="#tab2" data-toggle="tab">接口设置</a></li>
+                                                    <li><a href="#tab3" data-toggle="tab">第三方平台</a></li>
+                                                    <li><a href="#tab4" data-toggle="tab">积分设置</a></li 
+                                                ></ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="tab1">
+                                            <h3>基本设置</h3>
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >微信 Token</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control" type="text" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >默认缩略图</label>
+                                                            <div class="col-lg-10">
+                                                                <input name="" type="image">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">搜索关键字最大长度</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control" type="text" value="">
+                                                                <p class="help-block">一个汉字算两个字节，一个英文单词算两个字节，空格不算，搜索多个关键字可以用空格分开！</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">返回结果最大条数</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control" type="text" value="">
+                                                                <p class="help-block">微信接口最多支持返回10个。</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">关闭搜索</label>
+                                                            <div class="col-lg-10">
+                                                                <label><input name="" type="checkbox" value="">关闭搜索，则只有定义在自定义回复和内置回复的关键字有效，不会去搜索博客文章。</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">屏蔽统计</label>
+                                                            <div class="col-lg-10">
+                                                                <label><input name="" type="checkbox" value="">屏蔽统计之后，就无法统计用户发的信息和系统的回复。</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label"> </label>
+                                                        <div class="col-lg-10">
+                                                
+                                        <button type="submit" class="btn btn-primary">提 交</button>
+                                            </div>
+                                            </div>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane " id="tab2">
+                                            <h3>接口设置</h3>
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">微信AppID</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control"  type="text" value="">
+                                                                <p class="help-block">设置自定义菜单的所需的 AppID，如果没申请，可不填！</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >微信APPSecret</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control" type="text" value="">
+                                                                <p class="help-block">设置自定义菜单的所需的 APPSecret，如果没申请，可不填！</p> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >开启微信高级接口</label>
+                                                            <div class="col-lg-10">
+                                                                <label><input name="" type="checkbox" value="">如果你申请了服务号的高级接口，才开启该功能，否则会出错</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label"> </label>
+                                                        <div class="col-lg-10">
+                                                        <button type="submit" class="btn btn-primary">提 交</button>
+                                            			</div>
+                                            				</div>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="tab3">
+                                            <h3>第三方平台</h3>
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                         <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >第三方微信平台链接</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control" type="text" value=""> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >第三方微信平台 Token</label>
+                                                            <div class="col-lg-10">
+                                                            
+                                                                <input class="form-control"  type="text" value=""> 
+                                                            </div>
+                                                        </div>
+                                                         <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >第三方微信平台 Token</label>
+                                                            <div class="col-lg-10">
+                                                            
+                                                                <label><input name="" type="checkbox" value="">所有在WordPress找不到内容的关键词都提交到第三方微信平台处理。</label>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label"> </label>
+                                                        <div class="col-lg-10">
+                                                        <button type="submit" class="btn btn-primary">提 交</button>
+                                            			</div>
+                                            		</div>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="tab4">
+                                            <h3>积分设置</h3>
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                         <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >开启微信积分系统</label>
+                                                            <div class="col-lg-10">
+                                                                <label><input name="" type="checkbox" value="">开启积分系统</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >签到积分 Token</label>
+                                                            <div class="col-lg-10">
+                                                            
+                                                                <input class="form-control" type="text" value=""> 
+                                                                <p class="help-block">用户点击签到菜单，或者发送签单之后获取的积分。</p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label"> </label>
+                                                        <div class="col-lg-10">
+                                                        <button type="submit" class="btn btn-primary">提 交</button>
+                                            			</div>
+                                            		</div>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <?php include __DIR__ . "/../public/foot.php" ?>
+    
+</body>

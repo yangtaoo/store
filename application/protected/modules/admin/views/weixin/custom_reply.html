@@ -1,0 +1,451 @@
+<body class="bootstrap-admin-with-small-navbar">
+    <!-- small navbar -->
+    <?php include __DIR__ . "/../public/nav.php" ?>
+
+    <div class="container">
+        <!-- left, vertical navbar & content -->
+        <div class="row">
+            <!-- left, vertical navbar -->
+            <?php include __DIR__ . "/../public/left.php" ?>               
+
+            <!-- content -->
+            <div class="main">
+                            <div class="panel panel-default bootstrap-admin-no-table-panel">
+                                <div class="bootstrap-admin-no-table-panel-content bootstrap-admin-panel-content collapse in">
+                                    <div id="rootwizard">
+                                        <div class="navbar">
+                                            <div class="container">
+                                                <ul class="nav nav-pills">
+                                                    <li  class="active"><a href="#tab1" data-toggle="tab">自定义回复</a></li>
+                                                    <li><a href="#tab2" data-toggle="tab">默认回复</a></li>
+                                                    <li><a href="#tab3" data-toggle="tab">高级回复</a></li>
+                                                    <li><a href="#tab4" data-toggle="tab">内置回复</a></li
+                                                ></ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="tab1">
+                                            
+                        <div class="page-header bootstrap-admin-content-title">
+                            <h1>自定义菜单</h1>
+                        </div>
+                                            <table class="table table-striped table-bordered dataTable" id="example" aria-describedby="example_info">
+                                        <thead>
+                                            <tr role="row">
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">ID</th>
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">关键字</th>
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">回复</th>
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width:82px;">类型</th>
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width:150px;">添加时间</th>
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width:70px;">状态</th>
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width:166px;">操作</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                            <tr class="gradeA odd">
+                                                <td class=" ">1</td>
+                                                <td class=" ">关于,乐换新</td>
+                                                <td class="center ">我是王大崔我是王大崔我是王大崔我是王大崔</td>
+                                                <td class="center ">文本回复</td>
+                                                <td class="center ">2015-10-10 09:24</td>
+                                                <td class="center ">使用中</td>
+                                                <td class="center ">
+                                                    <a href="#"><button class="btn xiao btn-default"><i class="glyphicon glyphicon-eye-open"></i> 编辑</button></a>
+                                                    <button onClick="deleteMessage(1)" class="btn xiao btn-danger"><i class="glyphicon glyphicon-remove glyphicon-white"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="gradeA odd">
+                                                <td class=" ">1</td>
+                                                <td class=" ">关于,乐换新</td>
+                                                <td class="center ">我是王大崔我是王大崔我是王大崔我是王大崔</td>
+                                                <td class="center ">文本回复</td>
+                                                <td class="center ">2015-10-10 09:24</td>
+                                                <td class="center ">使用中</td>
+                                                <td class="center ">
+                                                    <a href="#"><button class="btn xiao btn-default"><i class="glyphicon glyphicon-eye-open"></i> 编辑</button></a>
+                                                    <button onClick="deleteMessage(1)" class="btn xiao btn-danger"><i class="glyphicon glyphicon-remove glyphicon-white"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="gradeA odd">
+                                                <td class=" ">1</td>
+                                                <td class=" ">关于,乐换新</td>
+                                                <td class="center ">我是王大崔我是王大崔我是王大崔我是王大崔</td>
+                                                <td class="center ">文本回复</td>
+                                                <td class="center ">2015-10-10 09:24</td>
+                                                <td class="center ">使用中</td>
+                                                <td class="center ">
+                                                    <a href="#"><button class="btn xiao btn-default"><i class="glyphicon glyphicon-eye-open"></i> 编辑</button></a>
+                                                    <button onClick="deleteMessage(1)" class="btn xiao btn-danger"><i class="glyphicon glyphicon-remove glyphicon-white"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="gradeA odd">
+                                                <td class=" ">1</td>
+                                                <td class=" ">关于,乐换新</td>
+                                                <td class="center ">我是王大崔我是王大崔我是王大崔我是王大崔</td>
+                                                <td class="center ">文本回复</td>
+                                                <td class="center ">2015-10-10 09:24</td>
+                                                <td class="center ">使用中</td>
+                                                <td class="center ">
+                                                    <a href="#"><button class="btn xiao btn-default"><i class="glyphicon glyphicon-eye-open"></i> 编辑</button></a>
+                                                    <button onClick="deleteMessage(1)" class="btn xiao btn-danger"><i class="glyphicon glyphicon-remove glyphicon-white"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="gradeA odd">
+                                                <td class=" ">1</td>
+                                                <td class=" ">关于,乐换新</td>
+                                                <td class="center ">我是王大崔我是王大崔我是王大崔我是王大崔</td>
+                                                <td class="center ">文本回复</td>
+                                                <td class="center ">2015-10-10 09:24</td>
+                                                <td class="center ">使用中</td>
+                                                <td class="center ">
+                                                    <a href="#"><button class="btn xiao btn-default"><i class="glyphicon glyphicon-eye-open"></i> 编辑</button></a>
+                                                    <button onClick="deleteMessage(1)" class="btn xiao btn-danger"><i class="glyphicon glyphicon-remove glyphicon-white"></i> 删除</button>
+                                                </td>
+                                            </tr>                                     
+                                        </tbody>
+                                    </table>
+                                                <div class="panel panel-default bootstrap-admin-no-table-panel">
+                            <div class="bootstrap-admin-no-table-panel-content bootstrap-admin-panel-content collapse in">
+                             
+                        <div class="page-header bootstrap-admin-content-title">
+                            <h1>自定义菜单</h1>
+                        </div> <form class="form-horizontal" method="post">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">关键字</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="min_price" name="min_price"  type="text">
+                                                <p class="help-block">多个关键字请用英文逗号区分开，如：七牛, qiniu, 七牛云存储, 七牛镜像存储</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">回复类型</label>
+                                            <div class="col-lg-10">
+                                                <select>
+                                                        <option value="文本">文本</option>
+                                                        <option value="文本">文本</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">回复内容</label>
+                                            <div class="col-lg-10">
+                                                <textarea id="wishing" name="wishing" class="form-control textarea-wysihtml5" style="height:200px;" ></textarea>
+                                                <p class="help-block">如果回复类型选择图文，请输入构成图文回复的单篇或多篇日志，用英文逗号区分开，如：123,234,345</p>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">添加时间</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="min_price" name="min_price" style="width:30%"  type="text" value="2014-02-12 12:23:12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">状态</label>
+                                            <div class="col-lg-10">
+                                            <label><input type="checkbox" value="0" name="check" class="ui_check">是否激活</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput"></label>
+                                            <div class="col-lg-10">
+
+                                                <button type="submit" class="btn btn-primary">新 增</button>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                                            </div>
+                                            <div class="tab-pane " id="tab2">
+                                                <div class="panel panel-default bootstrap-admin-no-table-panel">
+                            <div class="bootstrap-admin-no-table-panel-content bootstrap-admin-panel-content collapse in">
+                               
+                        <div class="page-header bootstrap-admin-content-title">
+                            <h1>默认回复</h1>
+                        </div> <form class="form-horizontal" method="post">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">用户关注时</label>
+                                            <div class="col-lg-10">
+                                            
+                                                <textarea id="wishing" name="wishing" class="form-control textarea-wysihtml5" style="height:100px;" ></textarea>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">多客服</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" name="min_price" type="text" >
+                                                 <p class="help-block">设置用户进入多客服系统直接咨询客户的关键字</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">进入服务号</label>
+                                            <div class="col-lg-10">
+                                                <textarea id="wishing" name="wishing" class="form-control textarea-wysihtml5" style="height:100px;" ></textarea>
+                                                <p class="help-block">用户进入微信服务号之后的默认回复，一天内只回复一次（你可以通过 weixin_enter_time 这个 filter 来更改时长）。
+这个功能只有开通了高级接口的服务号才能使用，并且在用户确认允许公众号使用其地理位置才可使用。</p>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">搜索没有匹配时</label>
+                                            <div class="col-lg-10">
+                                                <textarea id="wishing" name="wishing" class="form-control textarea-wysihtml5" style="height:100px;" ></textarea>
+                                                <p class="help-block">可以使用 [keyword] 代替相关的搜索关键字，留空则不回复！</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">发送的文本太长</label>
+                                            <div class="col-lg-10">
+                                                <textarea id="wishing" name="wishing" class="form-control textarea-wysihtml5" style="height:100px;" ></textarea>
+                                                <p class="help-block">设置超过最大长度提示语，留空则不回复！</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">发送语音</label>
+                                            <div class="col-lg-10">
+                                                <textarea id="wishing" name="wishing" class="form-control textarea-wysihtml5" style="height:100px;" ></textarea>
+                                                <p class="help-block">设置语言的默认回复文本，留空则不回复！</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">发送位置</label>
+                                            <div class="col-lg-10">
+                                                <textarea id="wishing" name="wishing" class="form-control textarea-wysihtml5" style="height:100px;" ></textarea>
+                                                <p class="help-block">设置位置的默认回复文本，留空则不回复！</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">发送图片</label>
+                                            <div class="col-lg-10">
+                                                <textarea id="wishing" name="wishing" class="form-control textarea-wysihtml5" style="height:100px;" ></textarea>
+                                                <p class="help-block">设置图片的默认回复文本，留空则不回复！</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput">发送链接</label>
+                                            <div class="col-lg-10">
+                                                <textarea id="wishing" name="wishing" class="form-control textarea-wysihtml5" style="height:100px;" ></textarea>
+                                                <p class="help-block">设置链接的默认回复文本，留空则不回复！</p>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="focusedInput"></label>
+                                            <div class="col-lg-10">
+
+                                                <button type="submit" class="btn btn-primary">新 增</button>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                                            </div>
+                                            
+                                            <div class="tab-pane" id="tab3">
+                                            
+                        <div class="page-header bootstrap-admin-content-title">
+                            <h1>高级回复</h1>
+                        </div>
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                         <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >返回最新日志关键字</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control" type="text" value=""> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >返回随机日志关键字</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control"  type="text" value=""> 
+                                                            </div>
+                                                        </div>
+                                                         <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >返回浏览最高日志关键字</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control"  type="text" value=""> 
+                                                            </div>
+                                                        </div>
+                                                         <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >返回留言最高日志关键字</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control"  type="text" value=""> 
+                                                            </div>
+                                                        </div>
+                                                         <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >返回7天内浏览最高日志关键字</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control"  type="text" value=""> 
+                                                            </div>
+                                                        </div>
+                                                         <div class="form-group">
+                                                            <label class="col-lg-2 control-label" >返回7天内留言最高日志关键字</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control"  type="text" value=""> 
+                                                            </div>
+                                                        </div>
+                                                        
+
+                                                        
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label"> </label>
+                                                        <div class="col-lg-10">
+                                                        <button type="submit" class="btn btn-primary">提 交</button>
+                                            			</div>
+                                            		</div>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="tab4">
+                                            <h3>插件或者扩展内置回复列表</h3>
+                                                <table class="table table-striped table-bordered dataTable" id="example" aria-describedby="example_info">
+                                        <thead>
+                                            <tr role="row">
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">关键字</th>
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">类型</th>
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">描述</th>
+                                                <th role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">处理函数</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                            <tr class="gradeA odd">
+                                                <td class=" ">[voice]</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>默认语音回复</td>
+                                                <td>weixin_robot_default_reply</td>
+                                            </tr>
+                                            <tr class="gradeA odd">
+                                                <td class=" ">[location]</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>默认地理位置回复</td>
+                                                <td>weixin_robot_default_reply</td>
+                                            </tr>    
+                                            <tr class="gradeA odd">
+                                                <td class=" ">[image]</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>默认图片回复</td>
+                                                <td>weixin_robot_default_reply</td>
+                                            </tr>     
+                                            <tr class="gradeA odd">
+                                                <td class=" ">[link]</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>默认链接回复</td>
+                                                <td>weixin_robot_default_reply</td>
+                                            </tr>     
+                                            <tr class="gradeA odd">
+                                                <td class=" ">[video]</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>默认视频回复</td>
+                                                <td>weixin_robot_default_reply</td>
+                                            </tr>     
+                                            <tr class="gradeA odd">
+                                                <td class=" ">[default]</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>没有匹配时回复</td>
+                                                <td>weixin_robot_not_found_reply</td>
+                                            </tr>     
+                                            <tr class="gradeA odd">
+                                                <td class=" ">[view]</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>查看网页时回复</td>
+                                                <td>weixin_robot_view_event_reply</td>
+                                            </tr>     
+                                            <tr class="gradeA odd">
+                                                <td class=" ">hi</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>欢迎回复</td>
+                                                <td>weixin_robot_welcome_reply</td>
+                                            </tr>        
+                                            <tr class="gradeA odd">
+                                                <td class=" ">h</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>欢迎回复</td>
+                                                <td>weixin_robot_welcome_reply</td>
+                                            </tr>       
+                                            <tr class="gradeA odd">
+                                                <td class=" ">help</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>欢迎回复</td>
+                                                <td>weixin_robot_welcome_reply</td>
+                                            </tr>      
+                                            <tr class="gradeA odd">
+                                                <td class=" ">帮助</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>欢迎回复</td>
+                                                <td>weixin_robot_welcome_reply</td>
+                                            </tr>        
+                                            <tr class="gradeA odd">
+                                                <td class=" ">您好</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>欢迎回复</td>
+                                                <td>weixin_robot_welcome_reply</td>
+                                            </tr>      
+                                            <tr class="gradeA odd">
+                                                <td class=" ">你好</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>欢迎回复</td>
+                                                <td>weixin_robot_welcome_reply</td>
+                                            </tr>      
+                                            <tr class="gradeA odd">
+                                                <td class=" ">subscribe</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>用户订阅</td>
+                                                <td>weixin_robot_subscribe_reply</td>
+                                            </tr>       
+                                            <tr class="gradeA odd">
+                                                <td class=" ">unsubscribe</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>用户取消订阅</td>
+                                                <td>weixin_robot_unsubscribe_reply</td>
+                                            </tr>         
+                                            <tr class="gradeA odd">
+                                                <td class=" ">zx</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>最新日志</td>
+                                                <td>weixin_robot_new_posts_reply</td>
+                                            </tr>           
+                                            <tr class="gradeA odd">
+                                                <td class=" ">sj</td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>随机日志</td>
+                                                <td>weixin_robot_rand_posts_reply</td>
+                                            </tr>           
+                                            <tr class="gradeA odd">
+                                                <td class=" "></td>
+                                                <td class=" ">完全匹配</td>
+                                                <td>一周内留言最多日志</td>
+                                                <td>weixin_robot_comment_7_posts_reply</td>
+                                            </tr>                         
+                                        </tbody>
+                                    </table>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <?php include __DIR__ . "/../public/foot.php" ?>
+    
+</body>
