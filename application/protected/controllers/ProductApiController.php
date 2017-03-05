@@ -11,6 +11,7 @@
 class ProductApiController extends BaseController {
     public function actionProductList(){
         $categoryId = Yii::app()->request->getParam('category_id');
+        $page = Yii::app()->request->getParam('page', 1);
         $data = array(
             1 => array(
                 "product_id" => 1,
