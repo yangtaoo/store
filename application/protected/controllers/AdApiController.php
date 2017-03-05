@@ -23,6 +23,10 @@ class AdApiController extends BaseController {
                 "link" => "http://www.turnreal.net"
             )
         );
-        $this->responeJson($data);
+        $result = array(
+            'status' => 1,
+            'data' => $data
+        );
+        $this->responeJson($result);
     }
 }

@@ -24,7 +24,11 @@ class CategoryApiController extends BaseController {
                 "category_name" => "食品干货",
             )
         );
-        $this->responeJson($data);
+        $result = array(
+            'status' => 1,
+            'data' => $data
+        );
+        $this->responeJson($result);
     }
     
 }

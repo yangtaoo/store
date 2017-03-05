@@ -35,6 +35,10 @@ class ProductApiController extends BaseController {
                 "update_at" => "update_at"
             )
         );
-        $this->responeJson($data);
+        $result = array(
+            'status' => 1,
+            'data' => $data
+        );
+        $this->responeJson($result);
     }
 }
